@@ -1,0 +1,34 @@
+.nav_container{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-bg-second);
+    box-shadow: 0 0px 6px 1px rgb(172, 172, 172);
+}
+.nav_button{
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    color: rgb(75, 75, 75);
+}
+.nav_button:hover{
+    cursor: pointer;
+    background-color: var(--color-bg);
+}
+.nav_button:active{
+    cursor: pointer;
+}
+.active{
+    color: rgb(255, 0, 0);
+}
+.active:active{
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}

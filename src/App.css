@@ -1,0 +1,21 @@
+.App{
+    display: grid;
+    height: 100vh;
+    background-color: var(--color-bg);
+    grid-template-rows: 1fr 70px;
+}
+.app_container{
+    height: 100%;
+}
+
+.principle_container{
+    display: grid;
+    grid-template-rows: 80px 1fr; 
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-bg-second);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 0px 10px 1px rgb(172, 172, 172);
+    position: relative;
+}

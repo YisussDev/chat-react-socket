@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+:root{
+    --color-bg: #dddddd;
+    --color-bg-second: #ffffff;
+    --color-message-box: #d1d1d1;
+}
