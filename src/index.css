@@ -4,12 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: 'Anek Latin', sans-serif;
 }
 
 :root{
-    --color-bg: #dddddd;
+    --color-bg: #ececec;
     --color-bg-second: #ffffff;
     --color-message-box: #d1d1d1;
 }
