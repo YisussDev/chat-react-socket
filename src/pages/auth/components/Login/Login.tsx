@@ -13,7 +13,7 @@ const Login = () => {
 
   const submitLogin = (data:any) => {
     show.next(true)
-    axios.post('https://chat-pro-api-production.up.railway.app/login', data)
+    axios.post('https://chat-pro-api-production.up.railway.app/login', data, {withCredentials: false})
     .then(res => 
     {
       localStorage.setItem('token', res.data.token)

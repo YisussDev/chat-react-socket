@@ -48,7 +48,8 @@ const Global = () => {
       const messagesHttp = await axios.get('https://chat-pro-api-production.up.railway.app/messages', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
-        }
+        },
+        withCredentials: false
       });
       setMessages([...messagesHttp.data, ...messages]);
       
@@ -72,7 +73,8 @@ const Global = () => {
       const messageResponse = await axios.post<MessageBoxInterface>('https://chat-pro-api-production.up.railway.app/messages/create',messageNew, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
-        }
+        },
+        withCredentials: false
       })
       socket.emit('message', messageResponse);
       setMessages([...messages, messageResponse.data]);
